@@ -13,3 +13,7 @@ pip3 install -r requirements.txt
 ```
 
 ## Description of Analysis
+
+Generally, k-means is typically used for clustering analysis. However, k-means is appropriate for numerical features. For this analysis, we have both numerical and categorical features that describe clients (which in my opinion makes this analysis a bit more interesting!). From a bit of research on clustering approaches, I stumbled upon the k-prototypes approach which is designed to handle this type of problem. The library for k-prototypes can be found [here](https://github.com/nicodv/kmodes). It works very similar (if not, the same)type of problem. The library for k-prototypes can be found [here](https://github.com/nicodv/kmodes). It works very similar (if not, the same) as sklearn.
+
+From the analysis, the "elbow" method showed that we can separate the clients into 4 distinct groups. Results showed that these 4 groups have very different average customer lifetime value and their most preferred coverage plan. This exercise is a great way to identify different groups of clients based on their CLV that can help insurance companies to determine which clients to renew their plan or make appropriate recommendation based on their needs that can increase their CLV. 
